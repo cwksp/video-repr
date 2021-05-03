@@ -255,7 +255,7 @@ if __name__ == '__main__':
     translate_load_root_(config)
 
     if args.name is None:
-        exp_name = osp.basename(args.config).split('.')[0]
+        exp_name = '_' + osp.basename(args.config).split('.')[0]
     else:
         exp_name = args.name
     if args.tag is not None:
